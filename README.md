@@ -59,13 +59,13 @@ Test result of upgrade (TFTP-Recovery way) process:
 - 4.0.15 > 4.0.80 NOPE
 
 - Shortest path to final 4.3.28:
-3.3.19 > 3.7.49 > 4.0.9/15
-after 4.0.15 there is no another way no update except UniFi (gen1 - UAP-LR and UAP-Pro) Network app/network:
+- 3.3.19 > 3.7.49 > 4.0.9/15
+- after 4.0.15 there is no another way no update except UniFi (gen1 - UAP-LR and UAP-Pro) Network app. / UniFi OS Server(not tested):
 
-UniFi Network Application 6.5.54:
+- UniFi Network Application 6.5.54:
 https://community.ui.com/releases/UniFi-Network-Application-6-5-54/d717f241-48bb-4979-8b10-99db36ddabe1
 
-UniFi Network Application for Windows 10.1.85 (not recommended, consider UniFi OS Server):
+- UniFi Network Application for Windows 10.1.85 (not recommended, consider UniFi OS Server):
 https://dl.ui.com/unifi/10.1.85-n38ayo5w94/UniFi-installer.exe
 
 
