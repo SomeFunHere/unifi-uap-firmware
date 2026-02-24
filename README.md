@@ -36,3 +36,37 @@ version, and then Unifi Controller could finally adopt the UAP.
 Attempting to adopt and upgrade the original UAP on a too old firmware would otherwise get
 stuck trying to update. Step-wise upgrading of firmware resulted in Unifi Controller seeing
 it as fully upgraded, allowing to adopt without further upgrading.
+
+Test result of upgrade (TFTP-Recovery way) process:
+3.3.19 > 3.7.8 OK!
+3.3.19 > 3.7.49 OK!
+3.7.8 > 3.7.58 OK!
+3.7.49 > 3.8.1 OK!
+3.7.58 > 3.8.1 OK!
+3.8.1 > 3.9.54 OK!
+3.8.1 > 3.9.3 OK!
+3.9.54 > 4.0.9 OK!
+4.0.9 > 4.0.15 OK!
+
+3.7.49 > 4.0.9 OK!
+
+3.7.58 > 4.3.28 NOPE
+3.9.3 > 4.3.28 NOPE
+4.0.9 > 4.3.28 NOPE
+4.0.9 > 4.3.13 NOPE
+4.0.9 > 4.0.80 NOPE
+4.0.9 > 4.0.54 NOPE
+4.0.9 > 4.0.42 NOPE
+4.0.15 > 4.0.80 NOPE
+
+Shortest path to final 4.3.28:
+3.3.19 > 3.7.49 > 4.0.9/15
+after 4.0.15 there is no another way no update except UniFi (gen1 - UAP-LR and UAP-Pro) Network app/network:
+
+UniFi Network Application 6.5.54:
+https://community.ui.com/releases/UniFi-Network-Application-6-5-54/d717f241-48bb-4979-8b10-99db36ddabe1
+
+UniFi Network Application for Windows 10.1.85 (not recommended, consider UniFi OS Server):
+https://dl.ui.com/unifi/10.1.85-n38ayo5w94/UniFi-installer.exe
+
+
