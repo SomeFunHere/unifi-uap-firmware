@@ -38,28 +38,27 @@ stuck trying to update. Step-wise upgrading of firmware resulted in Unifi Contro
 it as fully upgraded, allowing to adopt without further upgrading.
 
 Test result of upgrade (TFTP-Recovery way) process:
-3.3.19 > 3.7.8 OK!
-3.3.19 > 3.7.49 OK!
-3.7.8 > 3.7.58 OK!
-3.7.49 > 3.8.1 OK!
-3.7.58 > 3.8.1 OK!
-3.8.1 > 3.9.54 OK!
-3.8.1 > 3.9.3 OK!
-3.9.54 > 4.0.9 OK!
-4.0.9 > 4.0.15 OK!
+- 3.3.19 > 3.7.8 OK!
+- 3.3.19 > 3.7.49 OK!
+- 3.7.8 > 3.7.58 OK!
+- 3.7.49 > 3.8.1 OK!
+- 3.7.58 > 3.8.1 OK!
+- 3.8.1 > 3.9.54 OK!
+- 3.8.1 > 3.9.3 OK!
+- 3.9.54 > 4.0.9 OK!
+- 4.0.9 > 4.0.15 OK!
+- 3.7.49 > 4.0.9 OK!
 
-3.7.49 > 4.0.9 OK!
+- 3.7.58 > 4.3.28 NOPE
+- 3.9.3 > 4.3.28 NOPE
+- 4.0.9 > 4.3.28 NOPE
+- 4.0.9 > 4.3.13 NOPE
+- 4.0.9 > 4.0.80 NOPE
+- 4.0.9 > 4.0.54 NOPE
+- 4.0.9 > 4.0.42 NOPE
+- 4.0.15 > 4.0.80 NOPE
 
-3.7.58 > 4.3.28 NOPE
-3.9.3 > 4.3.28 NOPE
-4.0.9 > 4.3.28 NOPE
-4.0.9 > 4.3.13 NOPE
-4.0.9 > 4.0.80 NOPE
-4.0.9 > 4.0.54 NOPE
-4.0.9 > 4.0.42 NOPE
-4.0.15 > 4.0.80 NOPE
-
-Shortest path to final 4.3.28:
+- Shortest path to final 4.3.28:
 3.3.19 > 3.7.49 > 4.0.9/15
 after 4.0.15 there is no another way no update except UniFi (gen1 - UAP-LR and UAP-Pro) Network app/network:
 
